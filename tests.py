@@ -1,5 +1,5 @@
 import unittest
-from gaexperiment import GaExperiment, EXPERIMENT_CODE
+from gaexperiment import GaExperiment, EXPERIMENT_JS
 
 
 class GaExperimentTests(unittest.TestCase):
@@ -32,5 +32,5 @@ class GaExperimentTests(unittest.TestCase):
 
     def test_code_should_be_displayed(self):
         self.assertEqual(
-            EXPERIMENT_CODE % {'experiment_code': 'acode'},
+            EXPERIMENT_JS % {'experiment_code': 'acode'},
             self.sut.code)

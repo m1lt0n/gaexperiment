@@ -1,4 +1,4 @@
-EXPERIMENT_CODE = """<!-- Google Analytics Content Experiment code -->
+EXPERIMENT_JS = """<!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='%(experiment_code)s',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -54,4 +54,4 @@ class GaExperiment(object):
         if not self.is_original_version:
             return '<!-- Google Experiments Variation Page -->'
 
-        return EXPERIMENT_CODE % {'experiment_code': self.experiment_code}
+        return EXPERIMENT_JS % {'experiment_code': self.experiment_code}
