@@ -5,7 +5,7 @@ from gaexperiment import GaExperiment, EXPERIMENT_JS
 class GaExperimentTests(unittest.TestCase):
     def setUp(self):
         self.sut = GaExperiment('acode', ['v2', 'v3'], {})
-    
+
     def test_is_original_version_in_original_page(self):
         self.assertTrue(self.sut.is_original_version)
 

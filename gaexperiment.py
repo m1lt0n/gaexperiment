@@ -16,13 +16,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 
 class GaExperiment(object):
-    VARIATION_PARAM = 'gaexp'
-
     """
     The GaExperiment object handles the creation of the google experiment
     code to be inserted in a template in order to enable the google experiment
     functionality.
     """
+    VARIATION_PARAM = 'gaexp'
+
     def __init__(self, experiment_code, whitelist, get_vars):
         self.experiment_code = experiment_code
         self.whitelist = whitelist
