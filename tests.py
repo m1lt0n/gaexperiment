@@ -1,6 +1,5 @@
 import unittest
 from gaexperiment import GaExperiment, EXPERIMENT_CODE
-from mock import Mock
 
 
 class GaExperimentTests(unittest.TestCase):
